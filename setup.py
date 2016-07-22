@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='cloudify-ansible-plugin',
+    name='ansible-plugin',
     version='1.1',
     author='dongkai',
     author_email='dongkai@beyondcent.com',
