@@ -10,7 +10,7 @@ from cloudify.decorators import operation
 
 
 @operation
-def playbook(playbooks, inventory=list(), **kwargs):
+def playbook(playbooks, inventory, **kwargs):
     """ Runs a playbook as part of a Cloudify lifecycle operation """
 
     inventory_path = utils.get_inventory_path(inventory)
