@@ -10,7 +10,7 @@ from cloudify.decorators import operation
 
 
 @operation
-def playbook(playbooks, inventory, **kwargs):
+def ansible_playbook(playbooks, inventory, **kwargs):
     """ Runs a playbook as part of a Cloudify lifecycle operation """
 
     inventory_path = utils.get_inventory_path(inventory)
@@ -24,4 +24,5 @@ def playbook(playbooks, inventory, **kwargs):
         output = utils.run_command(command)
         ctx.logger.info('Command Output: {0}.'.format(output))
         ctx.logger.info('Finished running the Ansible Playbook.')
-        return "install success"
+
+    return "install success"
