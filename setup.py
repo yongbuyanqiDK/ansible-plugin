@@ -6,7 +6,7 @@ setup(
     author='dongkai',
     author_email='dongkai@beyondcent.com',
     description='Integrates with cloudify to deploy Ansible Playbooks',
-    packages=['ansible_plugin'],
+    packages=['ansible'],
     license='LICENSE',
     zip_safe=False,
     install_requires=["cloudify-plugins-common==3.3a3", "ansible==1.8.2"]
