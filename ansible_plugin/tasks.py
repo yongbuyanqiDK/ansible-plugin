@@ -24,3 +24,4 @@ def playbook(playbooks, inventory, **kwargs):
         output = utils.run_command(command)
         ctx.logger.info('Command Output: {0}.'.format(output))
         ctx.logger.info('Finished running the Ansible Playbook.')
+        return "install success"
